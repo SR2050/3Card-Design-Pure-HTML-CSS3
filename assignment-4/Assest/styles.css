@@ -1,0 +1,106 @@
+.container {
+    perspective: 1000px;
+  }
+  
+  .card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 50px auto;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    transform: rotateY(20deg);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+  }
+  
+  .card .card-body{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transform: translateZ(300px);
+  }
+  
+  .card .card-body h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .card .card-body p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .card .card-body .rating {
+    margin-bottom: 20px;
+  }
+  
+  .card .card-body .rating .fa-star {
+    color: gold;
+  }
+  
+  .card .card-body .rating .fa-star.checked {
+    color: gold;
+  }
+  
+  .card .card-body .buy {
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .card .card-body .deal button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    
+  }
+  .card .card-body .deal button:hover{
+    cursor: pointer;
+    background-color: #4caf4faf;
+    color: rgb(212, 212, 212);
+
+  }
+  
+  .card .card-body .price {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card .card-body .date {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Additional styles for links */
+  a {
+    text-decoration: none;
+    color: blue;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: darkblue;
+  }
+  
